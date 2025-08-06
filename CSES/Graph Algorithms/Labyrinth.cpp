@@ -30,10 +30,6 @@ int adj[1000][1000] = {};
 char pos[1000][1000];
 int n, m;
 
-int f(){
-
-}
-
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
