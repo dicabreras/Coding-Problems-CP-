@@ -1,23 +1,33 @@
+/*
+Coded by Diego Cabrera
+Codeforces username : GAL1LEO-DC
+*/
 #include <bits/stdc++.h>
-using namespace std; 
-int main(int argc, char const *argv[])
-{
-    long long t;
-    cin>>t;
-    while (t--)
-    {
-        int n, cont = 1; cin>>n;  
-        int m = (n*(n-1))/2, max_num = n-1, array_num[m], real_array[n];
-        for(int i = 0; i<m; i++){
-            cin>>array_num[i];
-        }
-        sort(array_num, array_num+m);
-        int num = array_num[0], j=0;
-        for(int i  = 0; i<m; i+=--n){
-             cout<<array_num[i]<<" ";      
-        }
-        
-        cout<<"1000000000\n";      
-    }    
+using namespace std;
+
+typedef long long ll;
+
+ll f(ll x) {
+    string s = to_string(x);
+    reverse(s.begin(), s.end());
+    return stoll(s);
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    ll X, Y;
+    cin >> X >> Y;
+
+    vector<ll> a(11);
+    a[1] = X;
+    a[2] = Y;
+
+    for (int i = 3; i <= 10; i++) {
+        a[i] = f(a[i-1] + a[i-2]);
+    }
+
+    cout << a[10] << "\n";
     return 0;
 }

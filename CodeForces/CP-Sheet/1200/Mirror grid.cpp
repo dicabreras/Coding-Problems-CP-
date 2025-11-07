@@ -1,5 +1,6 @@
 /*
 Coded by Diego Cabrera
+Codeforces username : GAL1LEO-DC
 */
 #include <bits/stdc++.h>
 using namespace std; 
@@ -55,20 +56,6 @@ int main(){
                         int temp = x;
                         x = n-1-y;
                         y = temp;
-                        /*
-                        if(k == 0){
-                            temp = x;
-                            x = n-1-y;
-                            y = temp;
-                        }
-                        else if(k == 1){
-                            temp = x;
-                            x = n-1-y;
-                            y = temp;
-                        }
-                        */
-                        
-
                     }
                 }
                 ans+=min(zeroes, ones);

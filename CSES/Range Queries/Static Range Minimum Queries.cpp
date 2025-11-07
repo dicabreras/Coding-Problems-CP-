@@ -22,17 +22,6 @@ using min_heap = priority_queue<TT, vector<TT>, greater<TT>>;
 
 const int M = 1e9+7;
 
-void printSparseTable(vector<vector<int>>& st){
-      int p = 1;
-    for(auto v : st){
-        cout<<p<<": ";
-        for(auto i : v){
-            cout<<i<<" ";
-        }
-        cout<<ln;
-        p*=2;
-    }
-}
 
 int main(){
     ios::sync_with_stdio(false);
@@ -44,8 +33,8 @@ int main(){
     #endif
     */
 
-    int n; 
-    cin >> n; 
+    int n, q;
+    cin >> n >> q;  
     vector<vi> st;
     vi current; 
     for(int i = 0; i<n; i++){
@@ -64,9 +53,18 @@ int main(){
         }
         st.push_back(current);
     }
-    // printSparseTable(st);
-    
-
+    while(q--){
+        int l, r;
+        cin >> l >> r; 
+        int d = r-l+1, p = -1;
+        while(d>0){
+            p++;
+            d = d>>1;
+        }
+        int ans = min(st[p][l-1] , st[p][r-(1<<p)]);
+        // cout<<(1<<p)<<ln; This is a way to do 2^p;
+        cout<<ans<<ln;
+    }
     
 
     return 0;
