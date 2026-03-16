@@ -1,6 +1,6 @@
 # 🏆 Competitive Programming Repository
 
-As an active **Competitive Programmer** — [Codeforces: GAL1LEO-DC](https://codeforces.com/profile/GAL1LEO-DC) | [AtCoder: GAL1LEO](https://atcoder.jp/users/GAL1LEO) — I regularly solve algorithmic problems and participate in online contests to enhance my **coding proficiency** and **problem-solving skills**.
+As an active **Competitive Programmer** — [Codeforces: CaSala](https://codeforces.com/profile/CaSala) | [AtCoder: CaSala](https://atcoder.jp/users/CaSala) — I regularly solve algorithmic problems and participate in online contests to enhance my **coding proficiency** and **problem-solving skills**.
 
 Recently, my team and I **qualified for the 2025 ICPC South America North Finals**, achieving **12th place nationally** and earning a 🥉 **Bronze Medal**.  
 I continue training and competing to strengthen my algorithmic thinking and mathematical reasoning.
