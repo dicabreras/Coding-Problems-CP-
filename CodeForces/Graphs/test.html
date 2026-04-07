@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Helvetica', 'Arial', sans-serif; color: #000; margin: 0; padding: 40px; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 50px; }
+        .brand h1 { margin: 0; font-size: 28px; font-weight: normal; }
+        .brand p { margin: 5px 0; font-size: 14px; color: #555; font-style: italic; }
+        .logo-box { background: #000; color: #fff; padding: 15px 25px; text-align: center; }
+        .logo-box h2 { margin: 0; letter-spacing: 5px; font-size: 20px; }
+        
+        .info-section { display: flex; justify-content: space-between; margin-bottom: 30px; font-size: 13px; }
+        .customer-info h3 { font-size: 14px; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; }
+        .customer-info p { margin: 3px 0; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background: #000; color: #fff; padding: 12px; text-align: left; font-size: 12px; letter-spacing: 1px; }
+        td { padding: 12px; border-bottom: 1px solid #eee; font-size: 13px; }
+        .text-right { text-align: right; }
+        .text-center { text-align: center; }
+        
+        .totals { margin-top: 20px; display: flex; flex-direction: column; align-items: flex-end; }
+        .total-row { display: grid; grid-template-columns: 120px 100px; text-align: right; font-size: 13px; margin-bottom: 5px; }
+        .grand-total { background: #d0e1f9; padding: 10px; font-weight: bold; margin-top: 10px; font-size: 16px; }
+        
+        .footer { margin-top: 50px; font-size: 11px; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="brand">
+            <h1>Black Label Hotels</h1>
+            <p>Amsterdam</p>
+            <p style="font-style: normal; font-size: 12px; color: #000;">
+                <span style="color: blue; text-decoration: underline;">Website</span> | info@blacklabelhotels.nl<br>
+                Phone number: +31 46 20 60 301
+            </p>
+        </div>
+        <div class="logo-box">
+            <h2>BLACK LABEL</h2>
+            <p style="margin: 0; font-size: 10px; letter-spacing: 8px;">HOTELS</p>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="customer-info" style="width: 45%;">
+            <h3>CUSTOMER:</h3>
+            <p><strong>Company name:</strong> Acme Corp</p>
+            <p><strong>Company ID:</strong> 1</p>
+            <p><strong>Company location:</strong> US</p>
+            <p><strong>Company phone:</strong> 23579111317</p>
+        </div>
+        <div style="text-align: right; width: 45%;">
+            <p><strong>Invoice issue date:</strong>2026-01-11</p>
+            <p><strong>Invoice due date:</strong> 2026-02-10</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 50%;">DESCRIPTION</th>
+                <th class="text-center">AMOUNT</th>
+                <th class="text-center">UNIT PRICE</th>
+                <th class="text-right">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Premium units</td>
+                <td class="text-center">50</td>
+                <td class="text-center">200</td>
+                <td class="text-right">10000</td>
+            </tr>
+            <tr>
+                <td>Software licenses</td>
+                <td class="text-center">30</td>
+                <td class="text-center">150</td>
+                <td class="text-right">4500</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="totals">
+        <div class="total-row"><span>SUBTOTAL</span> <span>14500</span></div>
+        <div class="total-row"><span>IVA</span> <span>3045</span></div>
+        <div class="total-row"><span>IRPF</span> <span>2320</span></div>
+        <div class="total-row grand-total"><span>TOTAL</span> <span>15225</span></div>
+    </div>
+
+    <div class="footer">
+        <strong>Terms & Instructions</strong><br>
+        Payment method: 
+<br>
+        Additional payment data: 
+
+    </div>
+</body>
+</html>
